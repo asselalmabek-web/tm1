@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Анкета — Трансцендентальная Медитация · Асель Алмабек</title>
+<meta name="description" content="Мягкая анкета‑самопроверка: где сейчас напряжение — стресс, сон, концентрация, отношения, память — и какой формат практики ТМ подойдёт вам.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;1,400&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#F6F1E8; --cream-deep:#EFE8DA; --paper:#FCFAF5;
+    --ink:#2C2820; --ink-soft:#6E665A; --ink-faint:#9A9182;
+    --gold:#B0905C; --gold-deep:#977A48; --gold-soft:#D8C7A4; --line:#E6DDCC;
+    --display:'Cormorant',Georgia,serif; --body:'Manrope',system-ui,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:var(--body);background:var(--cream);color:var(--ink);font-weight:300;line-height:1.7;-webkit-font-smoothing:antialiased;min-height:100vh}
+  ::selection{background:var(--gold-soft)}
+  h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.12}
+  .eyebrow{font-size:.72rem;letter-spacing:.32em;text-transform:uppercase;color:var(--gold-deep);font-weight:500}
+
+  .topbar{display:flex;justify-content:space-between;align-items:center;padding:1.4rem 28px;max-width:760px;margin:0 auto}
+  .brand{font-family:var(--display);font-size:1.25rem;letter-spacing:.04em;color:var(--ink);text-decoration:none}
+  .brand span{color:var(--gold)}
+  .topbar a.back{color:var(--ink-faint);text-decoration:none;font-size:.8rem;letter-spacing:.06em}
+  .topbar a.back:hover{color:var(--gold-deep)}
+
+  .stage{max-width:680px;margin:0 auto;padding:2rem 28px 5rem;min-height:70vh;display:flex;flex-direction:column;justify-content:center}
+
+  /* progress */
+  .progress-wrap{max-width:680px;margin:0 auto;padding:0 28px}
+  .progress{height:2px;background:var(--line);border-radius:2px;overflow:hidden}
+  .progress b{display:block;height:100%;width:0;background:var(--gold);transition:width .5s ease}
+  .progress-label{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-faint);margin-top:.7rem}
+
+  /* intro */
+  .intro h1{font-size:clamp(2.2rem,6vw,3.6rem);font-weight:300;margin:1rem 0 1.4rem}
+  .intro p{color:var(--ink-soft);font-size:1.08rem;margin-bottom:1rem;max-width:52ch}
+  .meta-note{font-size:.85rem;color:var(--ink-faint);margin-top:1.6rem}
+
+  .btn{font-family:var(--body);font-size:.88rem;letter-spacing:.05em;padding:.95rem 2.1rem;border-radius:999px;text-decoration:none;cursor:pointer;border:1px solid transparent;transition:all .35s ease;display:inline-block}
+  .btn-solid{background:var(--ink);color:var(--cream)}
+  .btn-solid:hover{background:var(--gold-deep)}
+  .btn-ghost{border-color:var(--line);color:var(--ink);background:none}
+  .btn-ghost:hover{border-color:var(--gold);color:var(--gold-deep)}
+  .btn-gold{background:var(--gold);color:#fff}
+  .btn-gold:hover{background:var(--gold-deep)}
+  .btn-row{display:flex;gap:1rem;flex-wrap:wrap;margin-top:2rem}
+
+  /* question */
+  .q-area{font-size:.72rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gold-deep);margin-bottom:1.2rem}
+  .q-text{font-family:var(--display);font-size:clamp(1.7rem,4.5vw,2.6rem);font-weight:300;line-height:1.25;margin-bottom:2.4rem}
+  .options{display:flex;flex-direction:column;gap:.7rem}
+  .opt{
+    text-align:left;background:var(--paper);border:1px solid var(--line);border-radius:8px;
+    padding:1.05rem 1.4rem;font-family:var(--body);font-size:1rem;font-weight:300;color:var(--ink);
+    cursor:pointer;transition:all .25s ease;display:flex;justify-content:space-between;align-items:center;
+  }
+  .opt:hover{border-color:var(--gold);background:#fff;transform:translateX(4px)}
+  .opt .tick{width:18px;height:18px;border-radius:50%;border:1px solid var(--line);transition:.25s}
+  .opt:hover .tick{border-color:var(--gold);background:var(--gold-soft)}
+  .q-back{margin-top:1.8rem;background:none;border:none;color:var(--ink-faint);cursor:pointer;font-family:var(--body);font-size:.82rem;letter-spacing:.05em}
+  .q-back:hover{color:var(--gold-deep)}
+
+  /* contact */
+  .form-card label{display:block;font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint);margin:1.3rem 0 .45rem}
+  .form-card input{width:100%;font-family:var(--body);font-weight:300;font-size:1rem;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:.9rem 1rem;transition:border-color .3s}
+  .form-card input:focus{outline:none;border-color:var(--gold)}
+  .consent{display:flex;gap:.7rem;align-items:flex-start;margin-top:1.5rem;font-size:.9rem;color:var(--ink-soft);cursor:pointer}
+  .consent input{width:18px;height:18px;margin-top:3px;accent-color:var(--gold);flex-shrink:0}
+  .err{color:#b4543a;font-size:.85rem;margin-top:.8rem;min-height:1rem}
+
+  /* result */
+  .result-quote{font-family:var(--display);font-style:italic;font-size:clamp(1.4rem,3.5vw,1.9rem);color:var(--gold-deep);line-height:1.4;margin-bottom:2.2rem;max-width:30ch}
+  .result h2{font-size:clamp(1.8rem,4vw,2.6rem);font-weight:300;margin-bottom:.4rem}
+  .result .sub{color:var(--ink-soft);margin-bottom:2.4rem}
+  .meter{margin-bottom:1.6rem}
+  .meter .top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:.5rem}
+  .meter .name{font-size:1.05rem;color:var(--ink)}
+  .meter .lvl{font-size:.78rem;letter-spacing:.06em;color:var(--ink-faint)}
+  .bar{height:6px;background:var(--cream-deep);border-radius:6px;overflow:hidden}
+  .bar b{display:block;height:100%;width:0;border-radius:6px;background:linear-gradient(90deg,var(--gold-soft),var(--gold));transition:width 1s ease}
+  .reco{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:2rem;margin:2.6rem 0}
+  .reco .eyebrow{margin-bottom:.8rem}
+  .reco h3{font-size:1.7rem;font-weight:400;margin-bottom:.6rem}
+  .reco p{color:var(--ink-soft);font-size:.98rem}
+  .cta-stack{display:flex;flex-direction:column;gap:.9rem;margin-top:1.6rem}
+  .cta-stack .btn{text-align:center;width:100%}
+  .disclaimer{font-size:.8rem;color:var(--ink-faint);margin-top:2.4rem;line-height:1.6;border-top:1px solid var(--line);padding-top:1.4rem}
+
+  .hidden{display:none}
+  @media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <a href="#" class="brand">Асель <span>Алмабек</span></a>
+  <a href="index.html" class="back">← на сайт</a>
+</div>
+
+<div class="progress-wrap hidden" id="progressWrap">
+  <div class="progress"><b id="progressBar"></b></div>
+  <div class="progress-label" id="progressLabel"></div>
+</div>
+
+<main class="stage" id="stage"><!-- screens injected here --></main>
+
+<script>
+const areas = [
+  { name:'Стресс и напряжение',
+    low:'здесь у вас есть внутренняя опора',
+    mid:'здесь ощущается напряжение',
+    high:'эта зона сейчас под нагрузкой' },
+  { name:'Самочувствие и энергия',
+    low:'у вас достаточно ресурса',
+    mid:'тело иногда устаёт от перегрузки',
+    high:'тело отзывается на стресс' },
+  { name:'Концентрация и внимание',
+    low:'внимание держится легко',
+    mid:'вниманию мешает фоновый шум',
+    high:'сосредоточиться сейчас трудно' },
+  { name:'Отношения и тепло',
+    low:'в отношениях достаточно тепла',
+    mid:'иногда не хватает терпения',
+    high:'напряжение влияет на близких' },
+  { name:'Сон и восстановление',
+    low:'сон вас восстанавливает',
+    mid:'сон не всегда глубокий',
+    high:'сон сейчас не даёт отдыха' },
+  { name:'Память и ясность',
+    low:'ум ясный и собранный',
+    mid:'иногда теряется фокус',
+    high:'удерживать всё в голове тяжело' },
+];
+
+const questions = [
+  { a:0, t:'В течение дня я чувствую внутреннее напряжение.' },
+  { a:0, t:'Мне трудно по‑настоящему расслабиться, даже в покое.' },
+  { a:1, t:'К вечеру я чувствую себя истощённой/истощённым.' },
+  { a:1, t:'Тело часто отзывается на стресс — тяжесть, зажатость, усталость.' },
+  { a:2, t:'Мне сложно удерживать внимание на одном деле.' },
+  { a:2, t:'Я часто отвлекаюсь и теряю мысль.' },
+  { a:3, t:'В близких отношениях бывает больше раздражения, чем тепла.' },
+  { a:3, t:'Мне не хватает терпения с близкими людьми.' },
+  { a:4, t:'Мне трудно заснуть или я просыпаюсь среди ночи.' },
+  { a:4, t:'Утром я просыпаюсь не отдохнувшей/отдохнувшим.' },
+  { a:5, t:'В последнее время я чаще забываю детали и дела.' },
+  { a:5, t:'Мне сложно держать в голове несколько вещей сразу.' },
+];
+
+const scale = [
+  { label:'Почти никогда', v:0 },
+  { label:'Иногда', v:1 },
+  { label:'Часто', v:2 },
+  { label:'Почти всегда', v:3 },
+];
+
+const quotes = [
+  'Вы уже сделали главное — остановились и посмотрели внутрь. Это начало тишины.',
+  'Покой — не то, что нужно заслужить. Это то, к чему вы возвращаетесь.',
+  'Вам не нужно быть лучше. Нужно немного тише — и ясность придёт сама.',
+];
+
+// === КОНТАКТЫ ===
+const WHATSAPP = '77021412179';                       // wa.me, международный формат
+const TELEGRAM = 'https://t.me/+77021412179';          // Telegram (тот же номер)
+const EMAIL    = 'asselalmabek@gmail.com';             // почта
+const PAY_LINK = '';                                   // оплата — добавим позже
+const BOOK_LINK= '';                                   // бронирование — добавим позже
+// ===============
+
+const answers = new Array(questions.length).fill(null);
+let step = 0; // 0=intro, 1..N=questions, N+1=contact, N+2=result
+const N = questions.length;
+const stage = document.getElementById('stage');
+const pWrap = document.getElementById('progressWrap');
+const pBar = document.getElementById('progressBar');
+const pLabel = document.getElementById('progressLabel');
+const client = { name:'', email:'', phone:'', consent:true };
+
+function render(){
+  if(step===0) return renderIntro();
+  if(step>=1 && step<=N) return renderQuestion(step-1);
+  if(step===N+1) return renderContact();
+  return renderResult();
+}
+
+function updateProgress(){
+  if(step>=1 && step<=N){
+    pWrap.classList.remove('hidden');
+    pBar.style.width = (step/N*100)+'%';
+    pLabel.textContent = `Вопрос ${step} из ${N}`;
+  } else { pWrap.classList.add('hidden'); }
+}
+
+function renderIntro(){
+  stage.innerHTML = `
+    <div class="intro">
+      <p class="eyebrow">Анкета · 2 минуты</p>
+      <h1>Где сейчас напряжение?</h1>
+      <p>Двенадцать спокойных вопросов о том, как вы себя чувствуете. Без оценок и правильных ответов — только честный взгляд внутрь.</p>
+      <p>В конце вы увидите, в каких зонах сейчас больше нагрузки, и какой формат практики ТМ подойдёт именно вам.</p>
+      <div class="btn-row"><button class="btn btn-solid" onclick="next()">Начать</button></div>
+      <p class="meta-note">Это не медицинская диагностика, а мягкое самонаблюдение.</p>
+    </div>`;
+}
+
+function renderQuestion(i){
+  const q = questions[i];
+  stage.innerHTML = `
+    <div>
+      <p class="q-area">${areas[q.a].name}</p>
+      <p class="q-text">${q.t}</p>
+      <div class="options">
+        ${scale.map(s=>`<button class="opt" onclick="answer(${i},${s.v})">${s.label}<span class="tick"></span></button>`).join('')}
+      </div>
+      ${i>0?'<button class="q-back" onclick="prev()">← назад</button>':''}
+    </div>`;
+}
+
+function renderContact(){
+  stage.innerHTML = `
+    <div class="form-card">
+      <p class="eyebrow">Почти готово</p>
+      <h2 style="font-size:clamp(1.8rem,4vw,2.6rem);font-weight:300;margin:.8rem 0 .4rem">Куда отправить результат</h2>
+      <p style="color:var(--ink-soft);margin-bottom:1rem">Оставьте контакты — покажу результат и пришлю мягкую поддержку для практики.</p>
+      <label for="cname">Имя</label>
+      <input id="cname" type="text" placeholder="Как к вам обращаться" value="${client.name}">
+      <label for="cmail">Email</label>
+      <input id="cmail" type="email" placeholder="вы@почта.kz" value="${client.email}">
+      <label for="cphone">Телефон / WhatsApp <span style="text-transform:none;letter-spacing:0">(по желанию)</span></label>
+      <input id="cphone" type="tel" placeholder="+7" value="${client.phone}">
+      <label class="consent"><input type="checkbox" id="cconsent" ${client.consent?'checked':''}>
+        Хочу получать вдохновляющие письма и напоминания о практике медитации.</label>
+      <div class="err" id="cerr"></div>
+      <div class="btn-row">
+        <button class="btn btn-solid" onclick="saveContact()">Показать результат</button>
+        <button class="btn btn-ghost" onclick="prev()">← назад</button>
+      </div>
+    </div>`;
+}
+
+function renderResult(){
+  const scores = areas.map((_,ai)=> questions.reduce((s,q,qi)=> q.a===ai ? s+(answers[qi]||0) : s, 0)); // 0..6
+  const total = scores.reduce((a,b)=>a+b,0); // 0..36
+  const quote = quotes[Math.floor(Math.random()*quotes.length)];
+
+  let reco, recoText;
+  if(total >= 22){ reco='Индивидуальное обучение ТМ'; recoText='Сейчас вам подойдёт глубокая персональная работа — отдельный курс из нескольких встреч, в вашем ритме и с личным сопровождением.'; }
+  else if(total >= 12){ reco='Индивидуальное или групповое обучение'; recoText='Хорошее время начать практику. Можно учиться лично или в небольшой группе — выбирайте по комфорту.'; }
+  else { reco='Вводная встреча и обучение ТМ'; recoText='Зон под сильной нагрузкой немного — отличная точка, чтобы начать мягко и закрепить ресурс на будущее.'; }
+
+  const meters = scores.map((sc,ai)=>{
+    const pct = Math.round(sc/6*100);
+    const lvl = sc>=5 ? areas[ai].high : sc>=3 ? areas[ai].mid : areas[ai].low;
+    return `<div class="meter">
+      <div class="top"><span class="name">${areas[ai].name}</span><span class="lvl">${lvl}</span></div>
+      <div class="bar"><b data-w="${pct}"></b></div></div>`;
+  }).join('');
+
+  const summary =
+    `Заявка с анкеты ТМ%0A`+
+    `Имя: ${enc(client.name)}%0A`+
+    `Email: ${enc(client.email)}%0A`+
+    `Телефон: ${enc(client.phone||'—')}%0A`+
+    `Рассылка: ${client.consent?'да':'нет'}%0A`+
+    `Баллы: ${areas.map((a,i)=>a.name.split(' ')[0]+' '+scores[i]+'/6').join(', ')}%0A`+
+    `Итог: ${total}/36%0A`+
+    `Рекомендация: ${enc(reco)}`;
+
+  const wa = `https://wa.me/${WHATSAPP}?text=${summary}`;
+  const tg = TELEGRAM;
+  const mail = `mailto:${EMAIL}?subject=${enc('Заявка с анкеты ТМ')}&body=${summary}`;
+
+  stage.innerHTML = `
+    <div class="result">
+      <p class="result-quote">«${quote}»</p>
+      <h2>Что показала анкета</h2>
+      <p class="sub">Это снимок «здесь и сейчас». Через практику картина мягко меняется.</p>
+      ${meters}
+      <div class="reco">
+        <p class="eyebrow">Что подойдёт вам</p>
+        <h3>${reco}</h3>
+        <p>${recoText}</p>
+        <div class="cta-stack">
+          <a class="btn btn-solid" href="${wa}" target="_blank" rel="noopener">Отправить результат в WhatsApp →</a>
+          <a class="btn btn-ghost" href="${tg}" target="_blank" rel="noopener">Написать в Telegram</a>
+          ${BOOK_LINK?`<a class="btn btn-gold" href="${BOOK_LINK}" target="_blank" rel="noopener">Забронировать встречу</a>`:''}
+          ${PAY_LINK?`<a class="btn btn-gold" href="${PAY_LINK}" target="_blank" rel="noopener">Перейти к оплате обучения</a>`:''}
+        </div>
+      </div>
+      <p class="disclaimer">Анкета помогает заметить, где сейчас больше напряжения, и не заменяет консультацию врача. Если что‑то тревожит здоровье — обратитесь к специалисту. Связь: <a href="${mail}" style="color:var(--gold-deep)">${EMAIL}</a></p>
+    </div>`;
+  requestAnimationFrame(()=> document.querySelectorAll('.bar b').forEach(b=> b.style.width=b.dataset.w+'%'));
+}
+
+function enc(s){ return encodeURIComponent(s||''); }
+function next(){ step++; updateProgress(); render(); window.scrollTo({top:0,behavior:'smooth'}); }
+function prev(){ if(step>0){ step--; updateProgress(); render(); window.scrollTo({top:0,behavior:'smooth'}); } }
+function answer(i,v){ answers[i]=v; next(); }
+
+function computeScores(){return areas.map((_,ai)=>questions.reduce((s,q,qi)=>q.a===ai?s+(answers[qi]||0):s,0));}
+function sendLead(){
+  try{
+    const sc=computeScores(), total=sc.reduce((a,b)=>a+b,0);
+    const reco = total>=22?'Индивидуальное обучение ТМ': total>=12?'Индивидуальное или групповое обучение':'Вводная встреча и обучение ТМ';
+    fetch('https://formsubmit.co/ajax/asselalmabek@gmail.com',{
+      method:'POST',
+      headers:{'Content-Type':'application/json',Accept:'application/json'},
+      body:JSON.stringify({
+        _subject:'Новая заявка с анкеты ТМ', _template:'table', _captcha:'false',
+        Имя:client.name, Email:client.email, Телефон:client.phone||'—',
+        Рассылка:client.consent?'да':'нет',
+        Баллы:areas.map((a,i)=>a.name+': '+sc[i]+'/6').join('; '),
+        Итог:total+'/36', Рекомендация:reco
+      })
+    }).catch(()=>{});
+  }catch(e){}
+}
+function saveContact(){
+  const name=document.getElementById('cname').value.trim();
+  const email=document.getElementById('cmail').value.trim();
+  const err=document.getElementById('cerr');
+  if(!name){ err.textContent='Напишите, пожалуйста, имя.'; return; }
+  if(!/^\S+@\S+\.\S+$/.test(email)){ err.textContent='Проверьте, пожалуйста, email.'; return; }
+  client.name=name; client.email=email;
+  client.phone=document.getElementById('cphone').value.trim();
+  client.consent=document.getElementById('cconsent').checked;
+  sendLead();
+  next();
+}
+
+render();
+</script>
+</body>
+</html>

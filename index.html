@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Асель Алмабек — Трансцендентальная Медитация в Казахстане</title>
+<meta name="description" content="Трансцендентальная Медитация в Казахстане. Чистая практика. Чистое пространство. Чистое сознание. Обучение с Асель Алмабек — Национальным директором ТМ в Казахстане.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#F6F1E8; --cream-deep:#EFE8DA; --paper:#FCFAF5;
+    --ink:#2C2820; --ink-soft:#6E665A; --ink-faint:#9A9182;
+    --gold:#B0905C; --gold-deep:#977A48; --gold-soft:#D8C7A4; --line:#E6DDCC;
+    --shadow:0 24px 60px -32px rgba(44,40,32,.28);
+    --display:'Cormorant',Georgia,serif; --body:'Manrope',system-ui,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--body);background:var(--cream);color:var(--ink);font-weight:300;line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  ::selection{background:var(--gold-soft);color:var(--ink)}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 28px}
+  .eyebrow{font-size:.72rem;letter-spacing:.32em;text-transform:uppercase;color:var(--gold-deep);font-weight:500;margin-bottom:1.4rem}
+  h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.08;letter-spacing:.005em}
+  .section{padding:clamp(5rem,11vw,9.5rem) 0}
+
+  nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:1.5rem 28px;transition:background .5s,padding .5s,box-shadow .5s}
+  nav.scrolled{background:rgba(246,241,232,.85);backdrop-filter:blur(14px);padding:1rem 28px;box-shadow:0 1px 0 var(--line)}
+  .brand{font-family:var(--display);font-size:1.35rem;letter-spacing:.04em;color:var(--ink);text-decoration:none}
+  .brand span{color:var(--gold)}
+  .nav-right{display:flex;align-items:center;gap:1.6rem}
+  .nav-links{display:flex;align-items:center;gap:1.7rem;list-style:none}
+  .nav-links a{color:var(--ink-soft);text-decoration:none;font-size:.8rem;letter-spacing:.07em;transition:color .3s}
+  .nav-links a:hover{color:var(--gold-deep)}
+  .nav-cta{border:1px solid var(--gold);color:var(--gold-deep)!important;padding:.55rem 1.2rem;border-radius:999px;transition:all .35s}
+  .nav-cta:hover{background:var(--gold);color:#fff!important}
+  .langs{display:flex;gap:.5rem;align-items:center}
+  .lang-btn{background:none;border:none;cursor:pointer;font-family:var(--body);font-size:.72rem;letter-spacing:.1em;color:var(--ink-faint);padding:.2rem .1rem;transition:color .3s}
+  .lang-btn:hover{color:var(--gold-deep)}
+  .lang-btn.active{color:var(--ink);border-bottom:1px solid var(--gold)}
+  .lang-sep{color:var(--line)}
+  .burger{display:none;background:none;border:none;cursor:pointer;width:30px;height:22px;position:relative}
+  .burger span{position:absolute;left:0;width:100%;height:1.5px;background:var(--ink);transition:.3s}
+  .burger span:nth-child(1){top:0}.burger span:nth-child(2){top:10px}.burger span:nth-child(3){top:20px}
+
+  .hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;position:relative;overflow:hidden;padding:7rem 28px 5rem}
+  .breath{position:absolute;top:50%;left:50%;width:min(78vw,720px);aspect-ratio:1;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle,rgba(216,199,164,.55) 0%,rgba(246,241,232,0) 62%);animation:breathe 11s ease-in-out infinite;z-index:0;pointer-events:none}
+  .breath.ring{background:none;border:1px solid rgba(176,144,92,.16);width:min(58vw,520px);animation:breathe 11s ease-in-out infinite reverse}
+  @keyframes breathe{0%,100%{transform:translate(-50%,-50%) scale(.86);opacity:.55}50%{transform:translate(-50%,-50%) scale(1.08);opacity:.9}}
+  .hero-inner{position:relative;z-index:1;max-width:880px}
+  .hero h1{font-size:clamp(2.6rem,7.5vw,5.6rem);font-weight:300;margin:.4rem 0 1.6rem}
+  .hero .lede{font-family:var(--display);font-style:italic;font-size:clamp(1.25rem,2.6vw,1.8rem);color:var(--gold-deep);margin-bottom:2.2rem}
+  .signature{max-width:560px;margin:0 auto 2.6rem;color:var(--ink-soft);font-size:.96rem;line-height:1.8}
+  .btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+  .btn{font-family:var(--body);font-size:.85rem;letter-spacing:.06em;padding:.95rem 2.1rem;border-radius:999px;text-decoration:none;cursor:pointer;transition:all .35s;border:1px solid transparent;display:inline-block}
+  .btn-solid{background:var(--ink);color:var(--cream)}.btn-solid:hover{background:var(--gold-deep)}
+  .btn-ghost{border-color:var(--line);color:var(--ink)}.btn-ghost:hover{border-color:var(--gold);color:var(--gold-deep)}
+  .scroll-hint{position:absolute;bottom:2.2rem;left:50%;transform:translateX(-50%);font-size:.68rem;letter-spacing:.3em;text-transform:uppercase;color:var(--ink-faint);z-index:1}
+
+  .about{background:var(--paper)}
+  .about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(2.5rem,6vw,6rem);align-items:start}
+  .about h2{font-size:clamp(2rem,4.2vw,3.2rem);font-weight:300}
+  .about-body p{color:var(--ink-soft);margin-bottom:1.3rem;font-size:1.04rem}
+  .about-body p:first-child{color:var(--ink);font-size:1.12rem}
+  .creds{list-style:none;margin-top:2.2rem;border-top:1px solid var(--line)}
+  .creds li{padding:1rem 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:1.5rem;font-size:.92rem}
+  .creds li span:first-child{color:var(--ink-faint);letter-spacing:.04em}
+  .creds li span:last-child{color:var(--ink);text-align:right}
+
+  .cert{background:var(--cream)}
+  .cert .head-center{margin-bottom:2.5rem}
+  .cert-frame{max-width:780px;margin:0 auto;background:#fff;padding:14px;border:1px solid var(--line);border-radius:6px;box-shadow:var(--shadow)}
+  .cert-frame img{width:100%;display:block;border-radius:3px}
+  .cert-caption{text-align:center;margin-top:1.4rem;color:var(--ink-soft);font-size:.92rem}
+  .cert-note{text-align:center;margin-top:.4rem;color:var(--ink-faint);font-size:.8rem}
+
+  .head-center{text-align:center;max-width:640px;margin:0 auto clamp(3rem,6vw,4.5rem)}
+  .head-center h2{font-size:clamp(2rem,4.2vw,3.2rem);font-weight:300;margin-bottom:1rem}
+  .head-center p{color:var(--ink-soft)}
+
+  .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+  .card{background:var(--cream);padding:2.6rem 2rem;transition:background .4s}
+  .card:hover{background:var(--paper)}
+  .card .dot{width:7px;height:7px;border-radius:50%;background:var(--gold);margin-bottom:1.6rem}
+  .card h3{font-size:1.5rem;margin-bottom:.7rem;font-weight:400}
+  .card p{color:var(--ink-soft);font-size:.92rem}
+
+  .quotes{background:var(--paper)}
+  .q-feat{text-align:center;max-width:760px;margin:0 auto 3.5rem}
+  .q-feat .mark{font-family:var(--display);font-size:4rem;color:var(--gold-soft);line-height:.4;height:1.6rem}
+  .q-feat blockquote{font-family:var(--display);font-style:italic;font-weight:300;font-size:clamp(2rem,5vw,3.4rem);line-height:1.25;color:var(--ink);margin-bottom:1.4rem}
+  .q-by{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-deep)}
+  .q-row{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;max-width:880px;margin:0 auto;border-top:1px solid var(--line);padding-top:3rem}
+  .q-row blockquote{font-family:var(--display);font-style:italic;font-size:clamp(1.5rem,3vw,2rem);line-height:1.35;color:var(--ink);margin-bottom:1rem}
+
+  .voices{background:var(--cream)}
+  .vid-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6rem}
+  .vid{text-decoration:none;display:block;group:none}
+  .vid-thumb{position:relative;aspect-ratio:16/10;border-radius:10px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow)}
+  .vid-thumb img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+  .vid:hover .vid-thumb img{transform:scale(1.05)}
+  .vid-thumb::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(44,40,32,0) 40%,rgba(44,40,32,.45))}
+  .play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:58px;height:58px;border-radius:50%;background:rgba(252,250,245,.92);display:flex;align-items:center;justify-content:center;z-index:2;transition:transform .3s}
+  .vid:hover .play{transform:translate(-50%,-50%) scale(1.08)}
+  .play svg{width:20px;height:20px;margin-left:3px;fill:var(--gold-deep)}
+  .vid-name{font-family:var(--display);font-size:1.5rem;color:var(--ink);margin:1.1rem 0 .25rem}
+  .vid-desc{color:var(--ink-soft);font-size:.9rem}
+  .vid-watch{color:var(--gold-deep);font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;margin-top:.6rem;display:inline-block}
+  .vid-more{text-align:center;color:var(--ink-faint);font-size:.92rem;margin-top:2.8rem;font-style:italic;font-family:var(--display)}
+
+  .formats{background:var(--paper)}
+  .format-row{display:grid;grid-template-columns:auto 1fr;gap:2rem;align-items:baseline;padding:2rem 0;border-top:1px solid var(--line);transition:padding-left .4s}
+  .format-row:last-child{border-bottom:1px solid var(--line)}
+  .format-row:hover{padding-left:1rem}
+  .format-row h3{font-size:clamp(1.5rem,3vw,2.1rem);font-weight:400;white-space:nowrap}
+  .format-row p{color:var(--ink-soft);max-width:46ch}
+
+  .sched-row{display:grid;grid-template-columns:auto 1fr auto;gap:1.5rem 2rem;align-items:center;padding:1.6rem 0;border-bottom:1px solid var(--line)}
+  .sched-row:first-of-type{border-top:1px solid var(--line)}
+  .sched-date{font-family:var(--display);font-size:1.3rem;color:var(--gold-deep);min-width:150px}
+  .sched-info b{font-weight:500;display:block;font-size:1.05rem}
+  .sched-info small{color:var(--ink-faint);letter-spacing:.04em}
+  .sched-link{color:var(--ink-soft);text-decoration:none;font-size:.85rem;letter-spacing:.05em;white-space:nowrap;border-bottom:1px solid var(--gold-soft);padding-bottom:2px;transition:color .3s}
+  .sched-link:hover{color:var(--gold-deep)}
+  .sched-cta{text-align:center;margin-top:3rem}
+
+  .reviews{background:var(--paper)}
+  .quotes-3{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}
+  .quote{padding:0 .5rem}
+  .quote .mark{font-family:var(--display);font-size:3rem;color:var(--gold-soft);line-height:.5;height:1.4rem}
+  .quote p{font-family:var(--display);font-size:1.5rem;font-style:italic;line-height:1.4;margin-bottom:1.4rem;color:var(--ink)}
+  .quote cite{font-style:normal;color:var(--ink-faint);font-size:.82rem;letter-spacing:.1em;text-transform:uppercase}
+
+  .center{background:var(--ink);color:var(--cream)}
+  .center .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2.5rem,6vw,6rem);align-items:center}
+  .center .eyebrow{color:var(--gold-soft)}
+  .center h2{font-size:clamp(2rem,4.2vw,3.4rem);font-weight:300;color:var(--cream);margin-bottom:1.4rem}
+  .center p{color:rgba(246,241,232,.7);margin-bottom:1.2rem}
+  .center .accent{font-family:var(--display);font-style:italic;font-size:1.4rem;color:var(--gold-soft)}
+  .mandala{width:100%;max-width:380px;margin:0 auto;display:block}
+  .mandala line,.mandala rect,.mandala circle{stroke:var(--gold);fill:none;stroke-width:.8;opacity:.55}
+  .mandala .core{opacity:.9;stroke-width:1}
+
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2.5rem,6vw,5rem);align-items:start}
+  .contact h2{font-size:clamp(2rem,4.2vw,3.2rem);font-weight:300;margin-bottom:1.4rem}
+  .contact .intro{color:var(--ink-soft);margin-bottom:2.2rem;max-width:38ch}
+  .channels{display:flex;flex-direction:column;gap:1px;background:var(--line);border:1px solid var(--line)}
+  .channels a{background:var(--paper);padding:1.3rem 1.5rem;text-decoration:none;color:var(--ink);display:flex;justify-content:space-between;align-items:center;transition:background .3s,padding-left .3s}
+  .channels a:hover{background:var(--cream-deep);padding-left:1.9rem}
+  .channels a span:last-child{color:var(--gold-deep);font-size:.8rem;letter-spacing:.1em}
+  .anketa-link{margin-top:1.4rem}
+  form{display:flex;flex-direction:column;gap:1.1rem}
+  label{font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);margin-bottom:.4rem;display:block}
+  input,textarea{width:100%;font-family:var(--body);font-size:.98rem;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:4px;padding:.85rem 1rem;transition:border-color .3s;font-weight:300}
+  input:focus,textarea:focus{outline:none;border-color:var(--gold)}
+  textarea{resize:vertical;min-height:120px}
+  .form-note{font-size:.85rem;color:var(--gold-deep);min-height:1.2rem}
+
+  footer{background:var(--cream-deep);padding:3rem 28px;text-align:center}
+  footer .brand{display:inline-block;margin-bottom:1rem}
+  footer p{color:var(--ink-faint);font-size:.82rem;letter-spacing:.03em}
+
+  .reveal{opacity:0;transform:translateY(26px);transition:opacity 1s,transform 1s}
+  .reveal.in{opacity:1;transform:none}
+
+  @media(max-width:880px){
+    .about-grid,.center .wrap,.contact-grid,.q-row{grid-template-columns:1fr}
+    .cards,.vid-grid,.quotes-3{grid-template-columns:1fr 1fr}
+    .nav-links{position:fixed;inset:0 0 0 auto;width:78%;max-width:330px;background:var(--paper);flex-direction:column;justify-content:center;gap:1.8rem;transform:translateX(100%);transition:transform .4s;box-shadow:var(--shadow);padding:2rem}
+    .nav-links.open{transform:translateX(0)}
+    .burger{display:block;z-index:101}
+    .langs{order:-1}
+    .format-row{grid-template-columns:1fr;gap:.5rem}
+    .sched-row{grid-template-columns:1fr;gap:.6rem}
+    .sched-date{min-width:0}
+  }
+  @media(max-width:560px){.cards,.vid-grid,.quotes-3{grid-template-columns:1fr}}
+  @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}.breath{animation:none;transform:translate(-50%,-50%) scale(1)}.reveal{opacity:1;transform:none;transition:none}}
+
+  /* ===== закат · облака · лес ===== */
+  .hero{background:linear-gradient(180deg,#E9D6EC 0%,#F0D7C7 26%,#F6E4CB 50%,#F7EAD3 70%,#F6F1E8 90%)}
+  .scene{position:absolute;inset:0;overflow:hidden;z-index:0;pointer-events:none}
+  .sun2{position:absolute;top:46%;left:50%;width:min(72vw,580px);aspect-ratio:1;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle,rgba(249,206,143,.9) 0%,rgba(243,182,120,.5) 32%,rgba(246,241,232,0) 64%);animation:sunpulse 12s ease-in-out infinite}
+  @keyframes sunpulse{0%,100%{transform:translate(-50%,-50%) scale(.92);opacity:.78}50%{transform:translate(-50%,-50%) scale(1.06);opacity:1}}
+  .cloud{position:absolute;border-radius:100px;background:radial-gradient(ellipse at center,rgba(255,255,255,.92),rgba(255,255,255,0) 72%);filter:blur(4px)}
+  .cloud.c1{width:340px;height:120px;top:15%;animation:drift 54s linear infinite}
+  .cloud.c2{width:240px;height:88px;top:28%;opacity:.55;animation:drift 74s linear infinite 8s}
+  .cloud.c3{width:440px;height:150px;top:8%;opacity:.5;animation:drift 94s linear infinite 18s}
+  @keyframes drift{from{transform:translateX(-480px)}to{transform:translateX(calc(100vw + 480px))}}
+  .bird{position:absolute;width:22px;height:10px;opacity:.5}
+  .bird path{stroke:#5b5145;stroke-width:1.4;fill:none;stroke-linecap:round}
+  .bird.b1{top:24%;animation:fly 46s linear infinite}
+  .bird.b2{top:30%;transform:scale(.8);animation:fly 62s linear infinite 14s}
+  @keyframes fly{from{left:-30px}to{left:calc(100% + 30px)}}
+  .forest{position:absolute;left:0;right:0;bottom:-1px;width:100%;height:clamp(110px,16vw,190px)}
+  .forest svg{width:100%;height:100%;display:block}
+  .forest.back{opacity:.5}.forest.back path{fill:#A9B391}
+  .forest.front{opacity:.72}.forest.front path{fill:#586B4C}
+  .center{background:linear-gradient(180deg,#3A2F49 0%,#2C2738 55%,#241F2C 100%)!important;position:relative;overflow:hidden}
+  .center .wrap{position:relative;z-index:2}
+  .stars{position:absolute;inset:0;z-index:1;pointer-events:none;background-image:radial-gradient(1.4px 1.4px at 12% 22%,rgba(255,248,230,.9),transparent),radial-gradient(1.4px 1.4px at 28% 64%,rgba(255,248,230,.7),transparent),radial-gradient(1.6px 1.6px at 47% 18%,rgba(255,248,230,.85),transparent),radial-gradient(1.2px 1.2px at 63% 48%,rgba(255,248,230,.7),transparent),radial-gradient(1.5px 1.5px at 78% 28%,rgba(255,248,230,.85),transparent),radial-gradient(1.3px 1.3px at 88% 60%,rgba(255,248,230,.7),transparent),radial-gradient(1.2px 1.2px at 38% 82%,rgba(255,248,230,.6),transparent),radial-gradient(1.4px 1.4px at 70% 78%,rgba(255,248,230,.7),transparent);animation:twinkle 6s ease-in-out infinite}
+  @keyframes twinkle{0%,100%{opacity:.55}50%{opacity:1}}
+  footer{background:linear-gradient(180deg,#EFE8DA 0%,#ECDDCB 100%)!important}
+  .sound-btn{position:fixed;right:20px;bottom:20px;z-index:120;width:50px;height:50px;border-radius:50%;border:1px solid var(--line);background:rgba(252,250,245,.9);backdrop-filter:blur(8px);cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow);transition:transform .3s,background .3s}
+  .sound-btn:hover{transform:scale(1.06);background:#fff}
+  .sound-btn svg{width:22px;height:22px}
+  .sound-btn .wave{transition:opacity .3s}
+  .sound-btn.off .wave{opacity:0}
+  .sound-btn .tip{position:absolute;right:62px;white-space:nowrap;background:var(--ink);color:var(--cream);font-size:.72rem;letter-spacing:.06em;padding:.4rem .7rem;border-radius:6px;opacity:0;pointer-events:none;transition:opacity .3s}
+  .sound-btn:hover .tip{opacity:1}
+  @media(prefers-reduced-motion:reduce){.sun2,.cloud,.bird,.stars{animation:none}}
+
+  /* ===== фото в движении · медитативные интерлюдии ===== */
+  .hero-slides{position:absolute;inset:0;z-index:0;overflow:hidden}
+  .hero-slides .slide{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;animation:heroFade 45s linear infinite}
+  .hero-slides .slide:nth-child(1){animation-delay:0s;transform-origin:30% 40%}
+  .hero-slides .slide:nth-child(2){animation-delay:9s;transform-origin:70% 55%}
+  .hero-slides .slide:nth-child(3){animation-delay:18s;transform-origin:50% 30%}
+  .hero-slides .slide:nth-child(4){animation-delay:27s;transform-origin:40% 65%}
+  .hero-slides .slide:nth-child(5){animation-delay:36s;transform-origin:60% 50%}
+  @keyframes heroFade{0%{opacity:0;transform:scale(1)}2%{opacity:1}18%{opacity:1}20%{opacity:0;transform:scale(1.12)}100%{opacity:0;transform:scale(1.12)}}
+  .hero-overlay{position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(246,241,232,.24) 0%,rgba(246,241,232,.12) 45%,rgba(246,241,232,.42) 100%)}
+  .hero-breath{position:absolute;inset:0;z-index:1;pointer-events:none;background:radial-gradient(circle at 50% 46%,rgba(255,250,240,.35),rgba(255,250,240,0) 55%);animation:sunpulse 11s ease-in-out infinite}
+  .hero-inner.glass{background:rgba(247,243,236,.52);backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px);padding:clamp(2rem,5vw,3.4rem) clamp(1.6rem,5vw,3.2rem);border-radius:20px;border:1px solid rgba(255,255,255,.5);box-shadow:0 30px 70px -40px rgba(44,40,32,.45);z-index:3}
+  .hero .scroll-hint{z-index:3;color:var(--ink-soft)}
+
+  .interlude{position:relative;height:80vh;min-height:480px;overflow:hidden;display:flex;align-items:center;justify-content:center;text-align:center}
+  .parallax-bg{position:absolute;top:-14%;left:0;width:100%;height:128%;will-change:transform}
+  .parallax-bg .kb{position:absolute;inset:0;background-size:cover;background-position:center;animation:floatzoom 30s ease-in-out infinite alternate}
+  @keyframes floatzoom{from{transform:scale(1.06)}to{transform:scale(1.18)}}
+  .interlude-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(18,16,14,.34),rgba(18,16,14,.46))}
+  .interlude-text{position:relative;z-index:2;color:#fff;padding:0 28px;max-width:780px}
+  .interlude-text .eyebrow{color:var(--gold-soft);margin-bottom:1rem}
+  .interlude-text h2{font-size:clamp(2.3rem,6.5vw,4.6rem);font-weight:300;color:#fff;line-height:1.15;text-shadow:0 2px 44px rgba(0,0,0,.5)}
+  @media(prefers-reduced-motion:reduce){.hero-slides .slide,.hero-breath,.parallax-bg .kb{animation:none}.hero-slides .slide:first-child{opacity:1}}
+  @media(max-width:560px){.interlude{height:72vh;min-height:420px}}
+</style>
+</head>
+<body>
+
+<nav id="nav">
+  <a href="#top" class="brand">Асель <span>Алмабек</span></a>
+  <div class="nav-right">
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about" data-i18n="nav_about">О практике</a></li>
+      <li><a href="#tm" data-i18n="nav_tm">Что такое ТМ</a></li>
+      <li><a href="#voices" data-i18n="nav_voices">Голоса</a></li>
+      <li><a href="#formats" data-i18n="nav_formats">Форматы</a></li>
+      <li><a href="#schedule" data-i18n="nav_schedule">Расписание</a></li>
+      <li><a href="#center" data-i18n="nav_center">Центр</a></li>
+      <li><a href="#contact" class="nav-cta" data-i18n="nav_cta">Записаться</a></li>
+    </ul>
+    <div class="langs">
+      <button class="lang-btn" data-lang="kk">ҚАЗ</button><span class="lang-sep">·</span>
+      <button class="lang-btn active" data-lang="ru">РУС</button><span class="lang-sep">·</span>
+      <button class="lang-btn" data-lang="en">ENG</button>
+    </div>
+    <button class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-slides">
+    <div class="slide" style="background-image:url(sky1.jpg)"></div>
+    <div class="slide" style="background-image:url(sky3.jpg)"></div>
+    <div class="slide" style="background-image:url(sky2.jpg)"></div>
+    <div class="slide" style="background-image:url(sky5.jpg)"></div>
+    <div class="slide" style="background-image:url(sky4.jpg)"></div>
+  </div>
+  <div class="hero-overlay"></div>
+  <div class="hero-breath"></div>
+  <div class="scene" hidden>
+    <div class="sun2"></div>
+    <div class="cloud c1"></div><div class="cloud c2"></div><div class="cloud c3"></div>
+    <svg class="bird b1" viewBox="0 0 22 10"><path d="M1 8 Q6 1 11 8 Q16 1 21 8"/></svg>
+    <svg class="bird b2" viewBox="0 0 22 10"><path d="M1 8 Q6 1 11 8 Q16 1 21 8"/></svg>
+    <div class="forest back"><svg viewBox="0 0 1440 240" preserveAspectRatio="xMidYMax slice"><path d="M0,240 L0,200 L0,130 L46,190 L92,132 L138,198 L184,121 L230,189 L276,146 L322,196 L368,123 L414,193 L460,138 L506,188 L552,149 L598,196 L644,126 L690,188 L736,122 L782,194 L828,133 L874,189 L920,127 L966,189 L1012,137 L1058,194 L1104,121 L1150,197 L1196,123 L1242,191 L1288,140 L1334,198 L1380,138 L1426,188 L1440,200 L1440,240 Z"/></svg></div>
+    <div class="forest front"><svg viewBox="0 0 1440 240" preserveAspectRatio="xMidYMax slice"><path d="M0,240 L0,210 L0,80 L38,204 L76,114 L114,204 L152,110 L190,202 L228,100 L266,201 L304,120 L342,205 L380,102 L418,200 L456,102 L494,206 L532,85 L570,210 L608,70 L646,198 L684,93 L722,207 L760,97 L798,199 L836,79 L874,210 L912,118 L950,201 L988,84 L1026,209 L1064,72 L1102,204 L1140,117 L1178,210 L1216,96 L1254,207 L1292,98 L1330,198 L1368,91 L1406,206 L1440,210 L1440,240 Z"/></svg></div>
+  </div>
+  <div class="hero-inner glass">
+    <p class="eyebrow" data-i18n="hero_eyebrow">Трансцендентальная Медитация · Казахстан</p>
+    <h1 data-i18n="hero_h1">Трансцендентальная<br>Медитация в Казахстане</h1>
+    <p class="lede" data-i18n="hero_lede">Чистая практика. Чистое пространство. Чистое сознание.</p>
+    <p class="signature" data-i18n="hero_sign">Асель Алмабек — Национальный директор ТМ в Казахстане. Сертифицированный учитель ТМ и продвинутых техник.</p>
+    <div class="btns">
+      <a href="#contact" class="btn btn-solid" data-i18n="hero_btn1">Записаться</a>
+      <a href="#schedule" class="btn btn-ghost" data-i18n="hero_btn2">Смотреть расписание</a>
+    </div>
+  </div>
+  <span class="scroll-hint" data-i18n="hero_scroll">тише ↓</span>
+</header>
+
+<section class="section about" id="about">
+  <div class="wrap about-grid">
+    <div class="reveal">
+      <p class="eyebrow" data-i18n="about_eyebrow">Обо мне</p>
+      <h2 data-i18n="about_h2">Тишина, которой можно научиться</h2>
+    </div>
+    <div class="about-body reveal">
+      <p data-i18n="about_p1">Меня зовут Асель Алмабек. Я обучаю Трансцендентальной Медитации — простой технике, которая позволяет уму естественно прийти в состояние глубокого покоя.</p>
+      <p data-i18n="about_p2">В феврале 2018 года я прошла Transcendental Meditation Teacher Training Course в Чантхабури, Таиланд. Сертификат выдан Maharishi European Research University (MERU), Зелисберг, Швейцария, и подтверждает подготовку в области лидерства, публичных лекций, креативности и проведения семинаров.</p>
+      <p data-i18n="about_p3">В Алматы я основала Центр ТМ, построенный по принципам архитектуры Васту — пространства, которое поддерживает ясность сознания.</p>
+      <p data-i18n="about_p4">Я не коуч и не психолог. Моя работа — практика и сознание.</p>
+      <ul class="creds">
+        <li><span data-i18n="cred1_l">Статус</span><span data-i18n="cred1_v">Национальный директор ТМ в Казахстане</span></li>
+        <li><span data-i18n="cred2_l">Сертификация</span><span data-i18n="cred2_v">Учитель ТМ и продвинутых техник</span></li>
+        <li><span data-i18n="cred3_l">Обучение</span><span data-i18n="cred3_v">MERU, Зелисберг, Швейцария · 2018</span></li>
+        <li><span data-i18n="cred4_l">Центр</span><span data-i18n="cred4_v">Центр ТМ по принципам Васту, Алматы</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="interlude" id="il1">
+  <div class="parallax-bg" data-speed="0.16"><div class="kb" style="background-image:url(zen-tree.jpg)"></div></div>
+  <div class="interlude-overlay"></div>
+  <div class="interlude-text reveal">
+    <p class="eyebrow" data-i18n="il1_e">пауза</p>
+    <h2 data-i18n="il1_h">Здесь и сейчас</h2>
+  </div>
+</section>
+
+<section class="section cert" id="cert">
+  <div class="wrap">
+    <div class="head-center reveal">
+      <p class="eyebrow" data-i18n="cert_eyebrow">Сертификация</p>
+      <h2 data-i18n="cert_h2">Подтверждённая квалификация</h2>
+      <p data-i18n="cert_p">Я прошла полный курс подготовки учителей Трансцендентальной Медитации и имею право обучать ТМ от MERU (Швейцария). Ниже — оригинал сертификата.</p>
+    </div>
+    <div class="cert-frame reveal">
+      <img src="sertifikat-assel-almabek.jpg" alt="Сертификат Assel Almabek — Maharishi European Research University">
+    </div>
+    <p class="cert-caption reveal" data-i18n="cert_caption">Сертификат · Maharishi European Research University, Зелисберг, Швейцария</p>
+    <p class="cert-note reveal" data-i18n="cert_note">Личные данные (номер удостоверения, дата рождения) скрыты в целях конфиденциальности.</p>
+  </div>
+</section>
+
+<section class="section" id="tm">
+  <div class="wrap">
+    <div class="head-center reveal">
+      <p class="eyebrow" data-i18n="tm_eyebrow">Практика</p>
+      <h2 data-i18n="tm_h2">Что такое Трансцендентальная Медитация</h2>
+      <p data-i18n="tm_intro">ТМ — это не концентрация и не контроль ума. Это естественный путь вглубь, доступный каждому.</p>
+    </div>
+    <div class="cards reveal">
+      <div class="card"><div class="dot"></div><h3 data-i18n="tm1_h">Просто</h3><p data-i18n="tm1_p">Двадцать минут дважды в день, сидя с закрытыми глазами. Без усилий, без контроля.</p></div>
+      <div class="card"><div class="dot"></div><h3 data-i18n="tm2_h">Научно подтверждено</h3><p data-i18n="tm2_p">Сотни исследований в университетах по всему миру.</p></div>
+      <div class="card"><div class="dot"></div><h3 data-i18n="tm3_h">Без философии и религии</h3><p data-i18n="tm3_p">Техника не требует веры или смены образа жизни.</p></div>
+      <div class="card"><div class="dot"></div><h3 data-i18n="tm4_h">Для современного ритма</h3><p data-i18n="tm4_p">Подходит занятым людям — для работы, семьи и города.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section quotes" id="quotes">
+  <div class="wrap">
+    <div class="head-center reveal" style="margin-bottom:2.5rem">
+      <p class="eyebrow" data-i18n="q_eyebrow">Слова основателей</p>
+    </div>
+    <div class="q-feat reveal">
+      <div class="mark">“</div>
+      <blockquote data-i18n="q_feat">Поливай корень, чтобы наслаждаться плодом.</blockquote>
+      <p class="q-by" data-i18n="q_feat_by">Махариши Махеш Йоги, основатель ТМ</p>
+    </div>
+    <div class="q-row reveal">
+      <div><blockquote data-i18n="q_a">Природа жизни — расти.</blockquote><p class="q-by" data-i18n="q_a_by">Махариши Махеш Йоги</p></div>
+      <div><blockquote data-i18n="q_b">Сознание — это всё, что есть.</blockquote><p class="q-by" data-i18n="q_b_by">Доктор Тони Нейдер, нейробиолог, глава организации ТМ</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section voices" id="voices">
+  <div class="wrap">
+    <div class="head-center reveal">
+      <p class="eyebrow" data-i18n="v_eyebrow">О практике говорят</p>
+      <h2 data-i18n="v_h2">Известные люди о ТМ</h2>
+      <p data-i18n="v_intro">Всемирно известные люди практикуют ТМ годами и открыто говорят о ней.</p>
+    </div>
+    <div class="vid-grid reveal">
+      <a class="vid" href="https://www.youtube.com/watch?v=s2tR4Z08yls" target="_blank" rel="noopener">
+        <div class="vid-thumb"><img src="https://img.youtube.com/vi/s2tR4Z08yls/hqdefault.jpg" alt="Jim Carrey">
+          <span class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span></div>
+        <div class="vid-name" data-i18n="v1_name">Джим Керри</div>
+        <div class="vid-desc" data-i18n="v1_desc">Речь в Университете Махариши, 2014</div>
+        <span class="vid-watch" data-i18n="v_play">Смотреть видео</span>
+      </a>
+      <a class="vid" href="https://www.youtube.com/watch?v=tYMUhDJrzLw" target="_blank" rel="noopener">
+        <div class="vid-thumb"><img src="https://img.youtube.com/vi/tYMUhDJrzLw/hqdefault.jpg" alt="Oprah Winfrey">
+          <span class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span></div>
+        <div class="vid-name" data-i18n="v2_name">Опра Уинфри</div>
+        <div class="vid-desc" data-i18n="v2_desc">«Город ТМ» — Oprah's Next Chapter</div>
+        <span class="vid-watch" data-i18n="v_play">Смотреть видео</span>
+      </a>
+      <a class="vid" href="https://www.youtube.com/watch?v=z2UHLMVr4vg" target="_blank" rel="noopener">
+        <div class="vid-thumb"><img src="https://img.youtube.com/vi/z2UHLMVr4vg/hqdefault.jpg" alt="David Lynch">
+          <span class="play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span></div>
+        <div class="vid-name" data-i18n="v3_name">Дэвид Линч</div>
+        <div class="vid-desc" data-i18n="v3_desc">О сознании, творчестве и мозге</div>
+        <span class="vid-watch" data-i18n="v_play">Смотреть видео</span>
+      </a>
+    </div>
+    <p class="vid-more reveal" data-i18n="v_more">Также практикуют: Пол Маккартни, Хью Джекман, Кэти Перри, Джерри Сайнфелд и многие другие.</p>
+  </div>
+</section>
+
+<section class="interlude" id="il2">
+  <div class="parallax-bg" data-speed="0.20"><div class="kb" style="background-image:url(clouds.jpg)"></div></div>
+  <div class="interlude-overlay"></div>
+  <div class="interlude-text reveal">
+    <p class="eyebrow" data-i18n="il2_e">погружение</p>
+    <h2 data-i18n="il2_h">Загляни в свой внутренний мир</h2>
+  </div>
+</section>
+
+<section class="section formats" id="formats">
+  <div class="wrap">
+    <div class="head-center reveal" style="text-align:left;margin-bottom:3rem">
+      <p class="eyebrow" data-i18n="f_eyebrow">Форматы обучения</p>
+      <h2 data-i18n="f_h2">Вы выбираете глубину, а не объём</h2>
+    </div>
+    <div class="reveal">
+      <div class="format-row"><h3 data-i18n="f1_h">Индивидуальное обучение</h3><p data-i18n="f1_p">Персональный курс из нескольких встреч. Техника передаётся лично, в вашем ритме.</p></div>
+      <div class="format-row"><h3 data-i18n="f2_h">Групповые программы</h3><p data-i18n="f2_p">Обучение в небольшой группе — общий ритм, тишина и поддержка.</p></div>
+      <div class="format-row"><h3 data-i18n="f3_h">Продвинутые техники</h3><p data-i18n="f3_p">Углубление практики для тех, кто уже освоил ТМ.</p></div>
+      <div class="format-row"><h3 data-i18n="f4_h">Корпоративные программы</h3><p data-i18n="f4_p">Практика для команд: ясность, устойчивость и внимание в работе.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="schedule">
+  <div class="wrap">
+    <div class="head-center reveal"><p class="eyebrow" data-i18n="s_eyebrow">Расписание</p><h2 data-i18n="s_h2">Ближайшие даты</h2></div>
+    <div class="reveal">
+      <div class="sched-row"><div class="sched-date" data-i18n="s1_d">12 июля</div><div class="sched-info"><b data-i18n="s1_t">Вводная лекция по ТМ</b><small data-i18n="s1_loc">Центр ТМ, Алматы · 19:00</small></div><a href="#contact" class="sched-link" data-i18n="s_link">Оставить заявку</a></div>
+      <div class="sched-row"><div class="sched-date" data-i18n="s2_d">19 июля</div><div class="sched-info"><b data-i18n="s2_t">Курс обучения ТМ — 4 встречи</b><small data-i18n="s2_loc">Центр ТМ, Алматы</small></div><a href="#contact" class="sched-link" data-i18n="s_link">Оставить заявку</a></div>
+      <div class="sched-row"><div class="sched-date" data-i18n="s3_d">2 августа</div><div class="sched-info"><b data-i18n="s3_t">Группа продвинутых техник</b><small data-i18n="s3_loc">Центр ТМ, Алматы</small></div><a href="#contact" class="sched-link" data-i18n="s_link">Оставить заявку</a></div>
+    </div>
+    <div class="sched-cta reveal"><a href="#contact" class="btn btn-solid" data-i18n="s_cta">Оставить заявку</a></div>
+  </div>
+</section>
+
+<section class="section reviews" id="reviews">
+  <div class="wrap">
+    <div class="head-center reveal"><p class="eyebrow" data-i18n="r_eyebrow">Что меняется</p><h2 data-i18n="r_h2">Спокойно, без громких слов</h2></div>
+    <div class="quotes-3 reveal">
+      <blockquote class="quote"><div class="mark">“</div><p data-i18n="r1">Стало тише внутри. Решения приходят сами.</p><cite data-i18n="r1_by">Динара</cite></blockquote>
+      <blockquote class="quote"><div class="mark">“</div><p data-i18n="r2">Появилась ясность, которой давно не хватало.</p><cite data-i18n="r2_by">Алмас</cite></blockquote>
+      <blockquote class="quote"><div class="mark">“</div><p data-i18n="r3">Концентрация на работе улучшилась без усилий.</p><cite data-i18n="r3_by">Камила</cite></blockquote>
+    </div>
+  </div>
+</section>
+
+<section class="section center" id="center">
+  <div class="stars"></div>
+  <div class="wrap">
+    <div class="reveal">
+      <p class="eyebrow" data-i18n="c_eyebrow">Центр ТМ в Алматы</p>
+      <h2 data-i18n="c_h2">Пространство, которое поддерживает сознание</h2>
+      <p data-i18n="c_p1">Центр построен по принципам Васту — древней архитектуры, согласующей здание со сторонами света, пропорцией и естественным светом.</p>
+      <p data-i18n="c_p2">Когда место в гармонии, практика становится глубже. Здесь тишину поддерживает само пространство.</p>
+      <p class="accent" data-i18n="c_accent">Чистое пространство для чистого сознания.</p>
+    </div>
+    <div class="reveal">
+      <svg class="mandala" viewBox="0 0 200 200" aria-hidden="true">
+        <rect x="20" y="20" width="160" height="160"/><rect x="46" y="46" width="108" height="108"/>
+        <rect x="72" y="72" width="56" height="56" class="core"/>
+        <line x1="20" y1="20" x2="180" y2="180"/><line x1="180" y1="20" x2="20" y2="180"/>
+        <line x1="100" y1="20" x2="100" y2="180"/><line x1="20" y1="100" x2="180" y2="100"/>
+        <circle cx="100" cy="100" r="14" class="core"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section class="interlude" id="il3">
+  <div class="parallax-bg" data-speed="0.16"><div class="kb" style="background-image:url(road.jpg)"></div></div>
+  <div class="interlude-overlay"></div>
+  <div class="interlude-text reveal">
+    <p class="eyebrow" data-i18n="il3_e">путь</p>
+    <h2 data-i18n="il3_h">Покой. Тишина. Гармония.</h2>
+  </div>
+</section>
+
+<section class="section contact" id="contact">
+  <div class="wrap contact-grid">
+    <div class="reveal">
+      <p class="eyebrow" data-i18n="ct_eyebrow">Связаться</p>
+      <h2 data-i18n="ct_h2">Записаться на практику</h2>
+      <p class="intro" data-i18n="ct_intro">Напишите удобным способом или оставьте заявку — я отвечу лично.</p>
+      <div class="channels">
+        <a href="https://wa.me/77021412179" target="_blank" rel="noopener"><span data-i18n="ct_wa">WhatsApp</span><span data-i18n="ct_write">написать →</span></a>
+        <a href="https://t.me/+77021412179" target="_blank" rel="noopener"><span data-i18n="ct_tg">Telegram</span><span data-i18n="ct_write">написать →</span></a>
+        <a href="mailto:asselalmabek@gmail.com"><span data-i18n="ct_email">E-mail</span><span data-i18n="ct_write">написать →</span></a>
+      </div>
+      <div class="anketa-link"><a href="anketa-tm.html" class="btn btn-ghost" data-i18n="ct_anketa">Пройти анкету</a></div>
+    </div>
+    <div class="reveal">
+      <form id="askForm">
+        <div><label for="name" data-i18n="form_name">Имя</label><input type="text" id="name" data-i18n-ph="form_name_ph" placeholder="Как к вам обращаться"></div>
+        <div><label for="msg" data-i18n="form_msg">Сообщение</label><textarea id="msg" data-i18n-ph="form_msg_ph" placeholder="Ваш вопрос или формат, который интересует"></textarea></div>
+        <button type="submit" class="btn btn-solid" style="align-self:flex-start" data-i18n="form_send">Отправить</button>
+        <p class="form-note" id="formNote"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <a href="#top" class="brand">Асель <span>Алмабек</span></a>
+  <p data-i18n="foot_tag">© 2026 · Трансцендентальная Медитация в Казахстане · Алматы</p>
+</footer>
+
+<script>
+const I18N = {
+  ru:{
+    nav_about:"О практике",nav_tm:"Что такое ТМ",nav_voices:"Голоса",nav_formats:"Форматы",nav_schedule:"Расписание",nav_center:"Центр",nav_cta:"Записаться",
+    hero_eyebrow:"Трансцендентальная Медитация · Казахстан",hero_h1:"Трансцендентальная<br>Медитация в Казахстане",hero_lede:"Чистая практика. Чистое пространство. Чистое сознание.",hero_sign:"Асель Алмабек — Национальный директор ТМ в Казахстане. Сертифицированный учитель ТМ и продвинутых техник.",hero_btn1:"Записаться",hero_btn2:"Смотреть расписание",hero_scroll:"тише ↓",
+    about_eyebrow:"Обо мне",about_h2:"Тишина, которой можно научиться",about_p1:"Меня зовут Асель Алмабек. Я обучаю Трансцендентальной Медитации — простой технике, которая позволяет уму естественно прийти в состояние глубокого покоя.",about_p2:"В феврале 2018 года я прошла Transcendental Meditation Teacher Training Course в Чантхабури, Таиланд. Сертификат выдан Maharishi European Research University (MERU), Зелисберг, Швейцария, и подтверждает подготовку в области лидерства, публичных лекций, креативности и проведения семинаров.",about_p3:"В Алматы я основала Центр ТМ, построенный по принципам архитектуры Васту — пространства, которое поддерживает ясность сознания.",about_p4:"Я не коуч и не психолог. Моя работа — практика и сознание.",
+    cred1_l:"Статус",cred1_v:"Национальный директор ТМ в Казахстане",cred2_l:"Сертификация",cred2_v:"Учитель ТМ и продвинутых техник",cred3_l:"Обучение",cred3_v:"MERU, Зелисберг, Швейцария · 2018",cred4_l:"Центр",cred4_v:"Центр ТМ по принципам Васту, Алматы",
+    cert_eyebrow:"Сертификация",cert_h2:"Подтверждённая квалификация",cert_p:"Я прошла полный курс подготовки учителей Трансцендентальной Медитации и имею право обучать ТМ от MERU (Швейцария). Ниже — оригинал сертификата.",cert_caption:"Сертификат · Maharishi European Research University, Зелисберг, Швейцария",cert_note:"Личные данные (номер удостоверения, дата рождения) скрыты в целях конфиденциальности.",
+    tm_eyebrow:"Практика",tm_h2:"Что такое Трансцендентальная Медитация",tm_intro:"ТМ — это не концентрация и не контроль ума. Это естественный путь вглубь, доступный каждому.",tm1_h:"Просто",tm1_p:"Двадцать минут дважды в день, сидя с закрытыми глазами. Без усилий, без контроля.",tm2_h:"Научно подтверждено",tm2_p:"Сотни исследований в университетах по всему миру.",tm3_h:"Без философии и религии",tm3_p:"Техника не требует веры или смены образа жизни.",tm4_h:"Для современного ритма",tm4_p:"Подходит занятым людям — для работы, семьи и города.",
+    q_eyebrow:"Слова основателей",q_feat:"Поливай корень, чтобы наслаждаться плодом.",q_feat_by:"Махариши Махеш Йоги, основатель ТМ",q_a:"Природа жизни — расти.",q_a_by:"Махариши Махеш Йоги",q_b:"Сознание — это всё, что есть.",q_b_by:"Доктор Тони Нейдер, нейробиолог, глава организации ТМ",
+    v_eyebrow:"О практике говорят",v_h2:"Известные люди о ТМ",v_intro:"Всемирно известные люди практикуют ТМ годами и открыто говорят о ней.",v1_name:"Джим Керри",v1_desc:"Речь в Университете Махариши, 2014",v2_name:"Опра Уинфри",v2_desc:"«Город ТМ» — Oprah's Next Chapter",v3_name:"Дэвид Линч",v3_desc:"О сознании, творчестве и мозге",v_play:"Смотреть видео",v_more:"Также практикуют: Пол Маккартни, Хью Джекман, Кэти Перри, Джерри Сайнфелд и многие другие.",
+    f_eyebrow:"Форматы обучения",f_h2:"Вы выбираете глубину, а не объём",f1_h:"Индивидуальное обучение",f1_p:"Персональный курс из нескольких встреч. Техника передаётся лично, в вашем ритме.",f2_h:"Групповые программы",f2_p:"Обучение в небольшой группе — общий ритм, тишина и поддержка.",f3_h:"Продвинутые техники",f3_p:"Углубление практики для тех, кто уже освоил ТМ.",f4_h:"Корпоративные программы",f4_p:"Практика для команд: ясность, устойчивость и внимание в работе.",
+    s_eyebrow:"Расписание",s_h2:"Ближайшие даты",s1_d:"12 июля",s1_t:"Вводная лекция по ТМ",s1_loc:"Центр ТМ, Алматы · 19:00",s2_d:"19 июля",s2_t:"Курс обучения ТМ — 4 встречи",s2_loc:"Центр ТМ, Алматы",s3_d:"2 августа",s3_t:"Группа продвинутых техник",s3_loc:"Центр ТМ, Алматы",s_link:"Оставить заявку",s_cta:"Оставить заявку",
+    r_eyebrow:"Что меняется",r_h2:"Спокойно, без громких слов",r1:"Стало тише внутри. Решения приходят сами.",r1_by:"Динара",r2:"Появилась ясность, которой давно не хватало.",r2_by:"Алмас",r3:"Концентрация на работе улучшилась без усилий.",r3_by:"Камила",
+    c_eyebrow:"Центр ТМ в Алматы",c_h2:"Пространство, которое поддерживает сознание",c_p1:"Центр построен по принципам Васту — древней архитектуры, согласующей здание со сторонами света, пропорцией и естественным светом.",c_p2:"Когда место в гармонии, практика становится глубже. Здесь тишину поддерживает само пространство.",c_accent:"Чистое пространство для чистого сознания.",
+    ct_eyebrow:"Связаться",ct_h2:"Записаться на практику",ct_intro:"Напишите удобным способом или оставьте заявку — я отвечу лично.",ct_wa:"WhatsApp",ct_tg:"Telegram",ct_email:"E-mail",ct_write:"написать →",ct_anketa:"Пройти анкету",form_name:"Имя",form_msg:"Сообщение",form_send:"Отправить",form_name_ph:"Как к вам обращаться",form_msg_ph:"Ваш вопрос или формат, который интересует",form_thanks:"Спасибо, {name}. Я свяжусь с вами.",
+    foot_tag:"© 2026 · Трансцендентальная Медитация в Казахстане · Алматы",sound_tip:"Звук природы",il1_e:"пауза",il1_h:"Здесь и сейчас",il2_e:"погружение",il2_h:"Загляни в свой внутренний мир",il3_e:"путь",il3_h:"Покой. Тишина. Гармония."
+  },
+  kk:{
+    nav_about:"Тәжірибе",nav_tm:"ТМ туралы",nav_voices:"Дауыстар",nav_formats:"Форматтар",nav_schedule:"Кесте",nav_center:"Орталық",nav_cta:"Жазылу",
+    hero_eyebrow:"Трансцендентальді Медитация · Қазақстан",hero_h1:"Қазақстандағы<br>Трансцендентальді Медитация",hero_lede:"Таза тәжірибе. Таза кеңістік. Таза сана.",hero_sign:"Әсел Алмабек — Қазақстандағы ТМ ұлттық директоры. ТМ мен озық техникалардың сертификатталған ұстазы.",hero_btn1:"Жазылу",hero_btn2:"Кестені көру",hero_scroll:"тыныш ↓",
+    about_eyebrow:"Мен туралы",about_h2:"Үйренуге болатын тыныштық",about_p1:"Менің атым — Әсел Алмабек. Мен Трансцендентальді Медитацияға үйретемін — бұл ақыл-ойды табиғи түрде терең тыныштыққа әкелетін қарапайым техника.",about_p2:"2018 жылдың ақпанында Таиландтың Чантхабури қаласында Transcendental Meditation Teacher Training Course курсынан өттім. Сертификатты Швейцарияның Зелисберг қаласындағы Maharishi European Research University (MERU) берді; ол көшбасшылық, ашық дәрістер, шығармашылық және семинар жүргізу бойынша дайындықты растайды.",about_p3:"Алматыда мен Васту сәулет принциптеріне сай салынған ТМ Орталығын аштым — бұл сананың ашықтығын қолдайтын кеңістік.",about_p4:"Мен коуч те, психолог те емеспін. Менің ісім — тәжірибе мен сана.",
+    cred1_l:"Мәртебе",cred1_v:"Қазақстандағы ТМ ұлттық директоры",cred2_l:"Сертификаттау",cred2_v:"ТМ және озық техникалардың ұстазы",cred3_l:"Оқу",cred3_v:"MERU, Зелисберг, Швейцария · 2018",cred4_l:"Орталық",cred4_v:"Васту бойынша ТМ Орталығы, Алматы",
+    cert_eyebrow:"Сертификаттау",cert_h2:"Расталған біліктілік",cert_p:"Трансцендентальді Медитация ұстазының толық курсын аяқтадым және ТМ-ге үйретуге MERU (Швейцария) тарапынан өкілеттік алдым. Төменде — түпнұсқа сертификат.",cert_caption:"Сертификат · Maharishi European Research University, Зелисберг, Швейцария",cert_note:"Жеке деректер (құжат нөмірі, туған күні) құпиялылық үшін жабылған.",
+    tm_eyebrow:"Тәжірибе",tm_h2:"Трансцендентальді Медитация дегеніміз не",tm_intro:"ТМ — бұл шоғырлану да, ақылды бақылау да емес. Бұл әркімге қолжетімді, тереңге апаратын табиғи жол.",tm1_h:"Қарапайым",tm1_p:"Күніне екі рет, жиырма минуттан, көзді жұмып отырып. Күш салусыз, бақылаусыз.",tm2_h:"Ғылыммен расталған",tm2_p:"Әлемдегі университеттерде жүздеген зерттеу жүргізілген.",tm3_h:"Философиясыз және дінсіз",tm3_p:"Техника сенімді немесе өмір салтын өзгертуді талап етпейді.",tm4_h:"Қазіргі ырғаққа",tm4_p:"Бос уақыты аз адамдарға — жұмыс, отбасы және қала үшін.",
+    q_eyebrow:"Негізін салушылардың сөзі",q_feat:"Жемісті татыр үшін тамырды сула.",q_feat_by:"Махариши Махеш Йоги, ТМ негізін салушы",q_a:"Өмірдің табиғаты — өсу.",q_a_by:"Махариши Махеш Йоги",q_b:"Сана — бар болмыстың өзі.",q_b_by:"Доктор Тони Нейдер, нейробиолог, ТМ ұйымының жетекшісі",
+    v_eyebrow:"Тәжірибе туралы айтады",v_h2:"Әйгілі адамдар ТМ туралы",v_intro:"Әлемге танымал адамдар ТМ-ді жылдар бойы тәжірибелеп, ол туралы ашық айтады.",v1_name:"Джим Керри",v1_desc:"Махариши университетіндегі сөзі, 2014",v2_name:"Опра Уинфри",v2_desc:"«ТМ қаласы» — Oprah's Next Chapter",v3_name:"Дэвид Линч",v3_desc:"Сана, шығармашылық және ми туралы",v_play:"Видеоны көру",v_more:"Сондай-ақ тәжірибелейді: Пол Маккартни, Хью Джекман, Кэти Перри, Джерри Сайнфелд және басқалар.",
+    f_eyebrow:"Оқу форматтары",f_h2:"Сіз көлемді емес, тереңдікті таңдайсыз",f1_h:"Жеке оқыту",f1_p:"Бірнеше кездесуден тұратын жеке курс. Техника жеке өзіңізге беріледі.",f2_h:"Топтық бағдарламалар",f2_p:"Шағын топта оқу — ортақ ырғақ, тыныштық және қолдау.",f3_h:"Озық техникалар",f3_p:"ТМ-ді меңгергендерге арналған тереңдету.",f4_h:"Корпоративтік бағдарламалар",f4_p:"Командаларға арналған тәжірибе: ашықтық, тұрақтылық және зейін.",
+    s_eyebrow:"Кесте",s_h2:"Жақын күндер",s1_d:"12 шілде",s1_t:"ТМ туралы кіріспе дәріс",s1_loc:"ТМ Орталығы, Алматы · 19:00",s2_d:"19 шілде",s2_t:"ТМ оқу курсы — 4 кездесу",s2_loc:"ТМ Орталығы, Алматы",s3_d:"2 тамыз",s3_t:"Озық техникалар тобы",s3_loc:"ТМ Орталығы, Алматы",s_link:"Өтінім қалдыру",s_cta:"Өтінім қалдыру",
+    r_eyebrow:"Не өзгереді",r_h2:"Тыныш, асқақ сөзсіз",r1:"Іште тынышталды. Шешімдер өздігінен келеді.",r1_by:"Динара",r2:"Көптен бері жетіспеген ашықтық пайда болды.",r2_by:"Алмас",r3:"Жұмыстағы зейін күш салусыз жақсарды.",r3_by:"Камила",
+    c_eyebrow:"Алматыдағы ТМ Орталығы",c_h2:"Сананы қолдайтын кеңістік",c_p1:"Орталық Васту принциптеріне сай салынған — бұл ғимаратты дүниенің тараптарымен, пропорциямен және табиғи жарықпен үйлестіретін көне сәулет өнері.",c_p2:"Орын үйлесімде болғанда, тәжірибе тереңдей түседі. Мұнда тыныштықты кеңістіктің өзі қолдайды.",c_accent:"Таза сана үшін таза кеңістік.",
+    ct_eyebrow:"Байланыс",ct_h2:"Тәжірибеге жазылу",ct_intro:"Ыңғайлы тәсілмен жазыңыз немесе өтінім қалдырыңыз — жеке жауап беремін.",ct_wa:"WhatsApp",ct_tg:"Telegram",ct_email:"E-mail",ct_write:"жазу →",ct_anketa:"Анкетадан өту",form_name:"Аты",form_msg:"Хабарлама",form_send:"Жіберу",form_name_ph:"Сізге қалай жүгінейін",form_msg_ph:"Сұрағыңыз немесе қызықтыратын формат",form_thanks:"Рақмет, {name}. Сізбен байланысамын.",
+    foot_tag:"© 2026 · Қазақстандағы Трансцендентальді Медитация · Алматы",sound_tip:"Табиғат дыбысы",il1_e:"үзіліс",il1_h:"Дәл қазір, осы жерде",il2_e:"ену",il2_h:"Ішкі әлеміңе үңіл",il3_e:"жол",il3_h:"Тыныштық. Үнсіздік. Үйлесім."
+  },
+  en:{
+    nav_about:"Practice",nav_tm:"What is TM",nav_voices:"Voices",nav_formats:"Formats",nav_schedule:"Schedule",nav_center:"Center",nav_cta:"Sign up",
+    hero_eyebrow:"Transcendental Meditation · Kazakhstan",hero_h1:"Transcendental<br>Meditation in Kazakhstan",hero_lede:"Pure practice. Pure space. Pure consciousness.",hero_sign:"Assel Almabek — National Director of TM in Kazakhstan. Certified teacher of TM and advanced techniques.",hero_btn1:"Sign up",hero_btn2:"See schedule",hero_scroll:"quieter ↓",
+    about_eyebrow:"About me",about_h2:"A silence you can learn",about_p1:"My name is Assel Almabek. I teach Transcendental Meditation — a simple technique that lets the mind settle naturally into deep rest.",about_p2:"In February 2018 I completed the Transcendental Meditation Teacher Training Course in Chanthaburi, Thailand. The certificate was issued by Maharishi European Research University (MERU), Seelisberg, Switzerland, and confirms training in leadership, public lecturing, creativity and seminar management.",about_p3:"In Almaty I founded a TM Center built on the principles of Vastu architecture — a space that supports clarity of consciousness.",about_p4:"I am not a coach or a psychologist. My work is practice and consciousness.",
+    cred1_l:"Status",cred1_v:"National Director of TM in Kazakhstan",cred2_l:"Certification",cred2_v:"Teacher of TM and advanced techniques",cred3_l:"Training",cred3_v:"MERU, Seelisberg, Switzerland · 2018",cred4_l:"Center",cred4_v:"TM Center on Vastu principles, Almaty",
+    cert_eyebrow:"Certification",cert_h2:"Verified qualification",cert_p:"I completed the full Transcendental Meditation Teacher Training Course and am authorized to teach TM by MERU, Switzerland. The original certificate is below.",cert_caption:"Certificate · Maharishi European Research University, Seelisberg, Switzerland",cert_note:"Personal data (ID number, date of birth) is hidden for privacy.",
+    tm_eyebrow:"The practice",tm_h2:"What is Transcendental Meditation",tm_intro:"TM is not concentration or control of the mind. It is a natural path inward, available to everyone.",tm1_h:"Simple",tm1_p:"Twenty minutes twice a day, sitting with eyes closed. No effort, no control.",tm2_h:"Backed by science",tm2_p:"Hundreds of studies at universities around the world.",tm3_h:"No philosophy or religion",tm3_p:"The technique asks for no belief or change of lifestyle.",tm4_h:"For modern life",tm4_p:"Made for busy people — work, family and the city.",
+    q_eyebrow:"Words of the founders",q_feat:"Water the root to enjoy the fruit.",q_feat_by:"Maharishi Mahesh Yogi, founder of TM",q_a:"The nature of life is to grow.",q_a_by:"Maharishi Mahesh Yogi",q_b:"Consciousness is all there is.",q_b_by:"Dr. Tony Nader, neuroscientist, head of the TM organization",
+    v_eyebrow:"Voices on the practice",v_h2:"Notable voices on TM",v_intro:"World-renowned figures have practiced TM for years and speak about it openly.",v1_name:"Jim Carrey",v1_desc:"Commencement, Maharishi University, 2014",v2_name:"Oprah Winfrey",v2_desc:"“TM Town” — Oprah's Next Chapter",v3_name:"David Lynch",v3_desc:"On consciousness, creativity and the brain",v_play:"Watch video",v_more:"Also practitioners: Paul McCartney, Hugh Jackman, Katy Perry, Jerry Seinfeld and many others.",
+    f_eyebrow:"Formats",f_h2:"You choose depth, not volume",f1_h:"Individual course",f1_p:"A personal course of several sessions. The technique is taught one to one, at your pace.",f2_h:"Group programs",f2_p:"Learning in a small group — shared rhythm, silence and support.",f3_h:"Advanced techniques",f3_p:"Deepening the practice for those who already know TM.",f4_h:"Corporate programs",f4_p:"Practice for teams: clarity, resilience and attention.",
+    s_eyebrow:"Schedule",s_h2:"Upcoming dates",s1_d:"12 July",s1_t:"Introductory talk on TM",s1_loc:"TM Center, Almaty · 7:00 PM",s2_d:"19 July",s2_t:"TM course — 4 sessions",s2_loc:"TM Center, Almaty",s3_d:"2 August",s3_t:"Advanced techniques group",s3_loc:"TM Center, Almaty",s_link:"Request a place",s_cta:"Request a place",
+    r_eyebrow:"What changes",r_h2:"Quiet, without big words",r1:"It went quieter inside. Decisions come on their own.",r1_by:"Dinara",r2:"A clarity I'd long been missing appeared.",r2_by:"Almas",r3:"My focus at work improved without effort.",r3_by:"Kamila",
+    c_eyebrow:"TM Center in Almaty",c_h2:"A space that supports consciousness",c_p1:"The center is built on Vastu principles — an ancient architecture that aligns a building with the cardinal directions, proportion and natural light.",c_p2:"When the space is in harmony, the practice goes deeper. Here the silence is held by the place itself.",c_accent:"Pure space for pure consciousness.",
+    ct_eyebrow:"Contact",ct_h2:"Sign up for the practice",ct_intro:"Write in any way that suits you, or leave a request — I reply personally.",ct_wa:"WhatsApp",ct_tg:"Telegram",ct_email:"E-mail",ct_write:"write →",ct_anketa:"Take the questionnaire",form_name:"Name",form_msg:"Message",form_send:"Send",form_name_ph:"How should I address you",form_msg_ph:"Your question or the format you're interested in",form_thanks:"Thank you, {name}. I'll be in touch.",
+    foot_tag:"© 2026 · Transcendental Meditation in Kazakhstan · Almaty",sound_tip:"Nature sound",il1_e:"pause",il1_h:"Here and now",il2_e:"immersion",il2_h:"Look into your inner world",il3_e:"the path",il3_h:"Stillness. Silence. Harmony."
+  }
+};
+let lang='ru';
+function setLang(l){
+  lang=l; const d=I18N[l];
+  document.documentElement.lang = l;
+  document.querySelectorAll('[data-i18n]').forEach(el=>{const v=d[el.dataset.i18n]; if(v!==undefined) el.innerHTML=v;});
+  document.querySelectorAll('[data-i18n-ph]').forEach(el=>{const v=d[el.dataset.i18nPh]; if(v!==undefined) el.placeholder=v;});
+  document.querySelectorAll('.lang-btn').forEach(b=>b.classList.toggle('active', b.dataset.lang===l));
+}
+document.querySelectorAll('.lang-btn').forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.lang)));
+
+const nav=document.getElementById('nav');
+addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>40));
+const burger=document.getElementById('burger'),links=document.getElementById('navLinks');
+burger.addEventListener('click',()=>links.classList.toggle('open'));
+links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>links.classList.remove('open')));
+const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+const form=document.getElementById('askForm'),note=document.getElementById('formNote');
+form.addEventListener('submit',e=>{e.preventDefault();const name=document.getElementById('name').value.trim();const msg=document.getElementById('msg').value.trim();fetch('https://formsubmit.co/ajax/asselalmabek@gmail.com',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify({_subject:'Вопрос с сайта ТМ',_template:'table',_captcha:'false',Имя:name||'—',Сообщение:msg||'—'})}).catch(()=>{});note.textContent=I18N[lang].form_thanks.replace('{name}',name||'').replace(', .','.').replace('  ',' ');form.reset();});
+</script>
+<button class="sound-btn off" id="soundBtn" aria-label="Звук природы">
+  <span class="tip" data-i18n="sound_tip">Звук природы</span>
+  <svg viewBox="0 0 24 24"><path d="M4 9v6h4l5 5V4L8 9H4z" fill="#977A48"/><path class="wave" d="M16 8.6a4 4 0 0 1 0 6.8" fill="none" stroke="#977A48" stroke-width="1.7" stroke-linecap="round"/><path class="wave" d="M18.8 6a7 7 0 0 1 0 12" fill="none" stroke="#977A48" stroke-width="1.7" stroke-linecap="round"/></svg>
+</button>
+<script>
+(function(){
+  const btn=document.getElementById('soundBtn');
+  let ctx,master,on=false,timer;
+  function brownNoise(){const b=ctx.createBuffer(1,ctx.sampleRate*2,ctx.sampleRate),d=b.getChannelData(0);let last=0;for(let i=0;i<d.length;i++){const w=Math.random()*2-1;last=(last+0.02*w)/1.02;d[i]=last*3.5;}return b;}
+  function chirp(){if(!on)return;const t=ctx.currentTime,o=ctx.createOscillator(),g=ctx.createGain(),p=ctx.createStereoPanner?ctx.createStereoPanner():null;o.type='sine';const f=1700+Math.random()*1500;o.frequency.setValueAtTime(f,t);o.frequency.exponentialRampToValueAtTime(f*1.5,t+0.07);o.frequency.exponentialRampToValueAtTime(f*0.92,t+0.17);g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(0.05,t+0.02);g.gain.exponentialRampToValueAtTime(0.001,t+0.22);o.connect(g);if(p){p.pan.value=Math.random()*1.6-0.8;g.connect(p);p.connect(master);}else g.connect(master);o.start(t);o.stop(t+0.25);timer=setTimeout(chirp,1600+Math.random()*3600);}
+  function start(){
+    ctx=new (window.AudioContext||window.webkitAudioContext)();
+    master=ctx.createGain();master.gain.value=0;master.connect(ctx.destination);
+    const src=ctx.createBufferSource();src.buffer=brownNoise();src.loop=true;
+    const lp=ctx.createBiquadFilter();lp.type='lowpass';lp.frequency.value=600;lp.Q.value=0.6;
+    const wind=ctx.createGain();wind.gain.value=0.5;
+    const lfo=ctx.createOscillator(),lg=ctx.createGain();lfo.frequency.value=0.08;lg.gain.value=170;lfo.connect(lg);lg.connect(lp.frequency);lfo.start();
+    src.connect(lp);lp.connect(wind);wind.connect(master);src.start();
+    master.gain.linearRampToValueAtTime(0.16,ctx.currentTime+1.5);
+    on=true;chirp();
+  }
+  btn.addEventListener('click',()=>{
+    if(!ctx){start();btn.classList.remove('off');return;}
+    if(ctx.state==='suspended')ctx.resume();
+    if(on){on=false;clearTimeout(timer);master.gain.linearRampToValueAtTime(0,ctx.currentTime+0.4);btn.classList.add('off');}
+    else{on=true;master.gain.linearRampToValueAtTime(0.16,ctx.currentTime+0.6);chirp();btn.classList.remove('off');}
+  });
+})();
+</script>
+<script>
+(function(){
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const items=[].slice.call(document.querySelectorAll('.parallax-bg'));
+  if(!items.length) return;
+  let ticking=false;
+  function upd(){
+    const vh=innerHeight;
+    items.forEach(el=>{
+      const r=el.parentElement.getBoundingClientRect();
+      const center=r.top+r.height/2-vh/2;
+      const sp=parseFloat(el.getAttribute('data-speed')||0.15);
+      el.style.transform='translate3d(0,'+(-center*sp).toFixed(1)+'px,0)';
+    });
+    ticking=false;
+  }
+  addEventListener('scroll',()=>{if(!ticking){requestAnimationFrame(upd);ticking=true;}},{passive:true});
+  addEventListener('resize',upd); upd();
+})();
+</script>
+</body>
+</html>
